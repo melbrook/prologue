@@ -1,5 +1,6 @@
 import React from "react";
 import messages from "./data";
+import "./App.css";
 
 function Home() {
 
@@ -14,23 +15,24 @@ function Home() {
 
   let myMessageArr = getMessages();
 
-  const allMessages = myMessageArr.map((message) => {
+  const allMessages = myMessageArr.map((message, index) => {
+    let formattedMessage = message.text;
+
     return (
           <div
-            style={{
-              display: "flex",
-              marginInline: "auto",
-            }}
-          >
-            {message.text}
+          className={index % 2 ? 'bubble-a' : 'bubble-k'}>
+            <span className="bubble-text">
+            {formattedMessage}
+            </span>
           </div>
     );
   });
 
+
+
   return (
     <>
       <section className="section home">
-        <hr className="horizontal-line" />
          <ul className="messages-list">{allMessages}</ul>
       </section>
     </>
