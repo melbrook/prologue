@@ -52,7 +52,7 @@ function Home(props) {
           >
             <span className="bubble-text" key={uniqid()} >
             {formattedMessage}
-            {isAudio && <ReactAudioPlayer src={require(`./${index}.aac`)} autoPlay controls className="audio-player" />}
+            {isAudio && <ReactAudioPlayer src={require(`./${index}.aac`)} controls className="audio-player" />}
             {isImg && <img src={require(`./${index}.jpg`)} className="pic" alt="" /> }
             <span className={"testing-date"} key={uniqid()} >
               {props.isDateVisible && messageDate}

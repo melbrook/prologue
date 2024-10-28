@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './Home';
-import { BsArrowDown, BsArrowUp, BsCalendar } from 'react-icons/bs';
+import { BsArrowDown, BsArrowUp, BsCalendar, BsHeart, BsHeartFill } from 'react-icons/bs';
 import { useState } from 'react';
 import uniqid from "uniqid";
 
@@ -9,8 +9,10 @@ import uniqid from "uniqid";
 function App() {
   const [isDateVisible, setIsDateVisible] = useState(false);
 
-  const scrollTop = (() => window.scrollTo({top: 0, behavior: 'smooth'}));
-  const scrollBottom =(() => window.scrollTo({left: 0, top: document.body.scrollHeight, behavior:'smooth'}))
+  const scrollTop = (() => window.scrollTo({top: 0,}));
+  const scrollBottom =(() => window.scrollTo({left: 0, top: document.body.scrollHeight}))
+
+  console.log("Congratulations, you have found the Easter Egg! I'm crazy about you, Karla 💘👩‍❤️‍👨👫🐕🐕🦢💌🦢😘")
 
   return (
     <div className="App" id={uniqid()} >
@@ -33,7 +35,7 @@ function App() {
 
        <footer className='footr'>
         <span>You already know</span>
-        <span className='heart-icon'>♥️</span>
+        <span className='heart-icon'>🦢</span>
        </footer>
        <div className="calendar" onClick={() => setIsDateVisible(!isDateVisible)}>
         <BsCalendar size={18} color='gray' />
