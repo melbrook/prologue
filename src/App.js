@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
 import { BsArrowDown, BsArrowUp, BsCalendar } from 'react-icons/bs';
 import { useState } from 'react';
-import { CgCalendar } from 'react-icons/cg';
+import uniqid from "uniqid";
+
 
 
 function App() {
@@ -13,13 +13,13 @@ function App() {
   const scrollBottom =(() => window.scrollTo({left: 0, top: document.body.scrollHeight, behavior:'smooth'}))
 
   return (
-    <div className="App">
+    <div className="App" id={uniqid()} >
         <h1 className='head'>
         Prologue 
         </h1>
-        <div className="timestamps">
+        <div className="timestamps"id={uniqid()} >
 
-        <p className='timestamp'>
+        <p className='timestamp' id={uniqid()} >
         September 26, 2024, 11:23 PM, CST
 
         </p>
@@ -28,7 +28,7 @@ function App() {
 
         </p>
         </div>
-       <Home isDateVisible={isDateVisible} setIsDateVisible={setIsDateVisible} />
+       <Home isDateVisible={isDateVisible} setIsDateVisible={setIsDateVisible} id={uniqid()} />
  
 
        <footer className='footr'>

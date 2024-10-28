@@ -3,6 +3,7 @@ import messages from "./data";
 import "./App.css";
 import ReactAudioPlayer from "react-audio-player";
 import imgOne from "./29.jpg"
+import uniqid from "uniqid";
 
 function Home(props) {
   let audioCounter = 0;
@@ -47,13 +48,13 @@ function Home(props) {
     return (
           <div
           className={sender === 'Karla' ? 'bubble-k' : 'bubble-a'}
-          
+          key={uniqid()} 
           >
-            <span className="bubble-text">
+            <span className="bubble-text" key={uniqid()} >
             {formattedMessage}
             {isAudio && <ReactAudioPlayer src={require(`./${index}.aac`)} autoPlay controls className="audio-player" />}
             {isImg && <img src={require(`./${index}.jpg`)} className="pic" alt="" /> }
-            <span className={"testing-date"}>
+            <span className={"testing-date"} key={uniqid()} >
               {props.isDateVisible && messageDate}
             </span>
             </span>
@@ -65,8 +66,8 @@ function Home(props) {
 
   return (
     <>
-      <section className="section home">
-         <ul className="messages-list">{allMessages}</ul>
+      <section className="section home" key={uniqid()} >
+         <ul className="messages-list" key={uniqid()} >{allMessages}</ul>
       </section>
     </>
   );
