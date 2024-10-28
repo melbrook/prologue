@@ -189,6 +189,13 @@ h1.head {
   
 }
 
+.pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 10px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

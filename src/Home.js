@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import messages from "./data";
 import "./App.css";
+import ReactAudioPlayer from "react-audio-player";
+import imgOne from "./29.jpg"
 
 function Home(props) {
+  let audioCounter = 0;
+  let imgCounter = 0;
+
+
+  const audioArray = [];
+  const picsArray = [];
 
   const getMessages = () => {
     const messageList = [];
@@ -20,6 +28,21 @@ function Home(props) {
     let sender = message.sender;
     let msgDate = message.createdAt;
     let messageDate = msgDate.split(/[a-zA-Z]/)[0];
+    let isAudio = message.audio;
+    let isImg = message.image;
+    //const audioCounter = 0;
+    let myAudio = `./public/audio/${audioCounter[index]}.aac`;
+    let myImg = `${index}.jpg`;
+    
+    //const imgCounter = 0;
+    /* 
+    if(isAudio) {
+      setAudioCounter(audioCounter + 1)
+    };
+    if(isImg) {
+      setImgCounter(imgCounter + 1)
+    };
+    */
 
     return (
           <div
@@ -28,6 +51,8 @@ function Home(props) {
           >
             <span className="bubble-text">
             {formattedMessage}
+            {isAudio && <ReactAudioPlayer src={myAudio} />}
+            {isImg && <img src={require(`./${index}.jpg`)} className="pic" alt="" /> }
             <span className={"testing-date"}>
               {props.isDateVisible && messageDate}
             </span>
