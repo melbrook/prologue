@@ -196,6 +196,11 @@ h1.head {
   padding-top: 10px;
 }
 
+.audio-player {
+  width: 100%;
+  padding-top: 10px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
