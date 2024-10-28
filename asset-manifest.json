@@ -1,19 +1,39 @@
 {
   "files": {
-    "main.css": "/prologue/static/css/main.c19dce9f.css",
-    "main.js": "/prologue/static/js/main.1d5f852e.js",
+    "main.css": "/prologue/static/css/main.49aeef07.css",
+    "main.js": "/prologue/static/js/main.076d5be8.js",
     "static/js/453.83c47c6c.chunk.js": "/prologue/static/js/453.83c47c6c.chunk.js",
+    "static/media/89.aac": "/prologue/static/media/89.31955f598d2b68b3329c.aac",
+    "static/media/122.aac": "/prologue/static/media/122.d54c67731ffab3be3f4c.aac",
+    "static/media/9.aac": "/prologue/static/media/9.d25038686c9725e48602.aac",
+    "static/media/30.jpg": "/prologue/static/media/30.6d83eb191cb0b5741c8e.jpg",
+    "static/media/29.jpg": "/prologue/static/media/29.a4e372e510c69050618b.jpg",
     "static/media/Bookerly-Regular.ttf": "/prologue/static/media/Bookerly-Regular.8901f6d35cfafb10e997.ttf",
+    "static/media/224.aac": "/prologue/static/media/224.767a9c3f48f2cb79c30b.aac",
+    "static/media/71.jpg": "/prologue/static/media/71.a499c473b59bf8bd1a33.jpg",
+    "static/media/226.aac": "/prologue/static/media/226.b48d7c3d87076e8ef67f.aac",
+    "static/media/153.aac": "/prologue/static/media/153.646d9d61169f878ecb52.aac",
+    "static/media/24.aac": "/prologue/static/media/24.a5520fbc68b81b6e70d9.aac",
+    "static/media/137.aac": "/prologue/static/media/137.f8a7774b3a0a16a57a16.aac",
+    "static/media/219.aac": "/prologue/static/media/219.daf70b7f1536e11826da.aac",
+    "static/media/79.jpg": "/prologue/static/media/79.7ee45d32c015e10fa192.jpg",
+    "static/media/218.aac": "/prologue/static/media/218.8fa2c11a125c6dd17079.aac",
+    "static/media/10.aac": "/prologue/static/media/10.1b44bc0db9ee7dce219a.aac",
+    "static/media/115.jpg": "/prologue/static/media/115.aa5de432dee46e47f9f0.jpg",
+    "static/media/206.aac": "/prologue/static/media/206.78e73352ae098dd315fb.aac",
     "static/media/bitstream-iowan-old-style-bt-586c36a8d7712.ttf": "/prologue/static/media/bitstream-iowan-old-style-bt-586c36a8d7712.0d156c4641eac1a50d01.ttf",
+    "static/media/113.jpg": "/prologue/static/media/113.7d1e241e70259038551c.jpg",
+    "static/media/213.aac": "/prologue/static/media/213.1385cb88c61e3dd4fea0.aac",
     "static/media/Atkinson-Hyperlegible-Regular-102.ttf": "/prologue/static/media/Atkinson-Hyperlegible-Regular-102.0f70189614a5d1405a86.ttf",
-    "static/media/logo.svg": "/prologue/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/127.jpg": "/prologue/static/media/127.936dad2131978dfa236b.jpg",
+    "static/media/11.aac": "/prologue/static/media/11.5691f3ce46d086185aa6.aac",
     "index.html": "/prologue/index.html",
-    "main.c19dce9f.css.map": "/prologue/static/css/main.c19dce9f.css.map",
-    "main.1d5f852e.js.map": "/prologue/static/js/main.1d5f852e.js.map",
+    "main.49aeef07.css.map": "/prologue/static/css/main.49aeef07.css.map",
+    "main.076d5be8.js.map": "/prologue/static/js/main.076d5be8.js.map",
     "453.83c47c6c.chunk.js.map": "/prologue/static/js/453.83c47c6c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c19dce9f.css",
-    "static/js/main.1d5f852e.js"
+    "static/css/main.49aeef07.css",
+    "static/js/main.076d5be8.js"
   ]
 }
