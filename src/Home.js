@@ -17,10 +17,11 @@ function Home() {
 
   const allMessages = myMessageArr.map((message, index) => {
     let formattedMessage = message.text;
-
+    let sender = message.sender;
+    let date = message.createdAt;
     return (
           <div
-          className={index % 2 ? 'bubble-a' : 'bubble-k'}>
+          className={sender === 'Karla' ? 'bubble-k' : 'bubble-a'}>
             <span className="bubble-text">
             {formattedMessage}
             </span>

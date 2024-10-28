@@ -84,7 +84,9 @@ h1.head {
 
 .bubble,
 .bubble-k,
-.bubble-a {
+.bubble-a,
+.bubble-k-short,
+.bubble-a-short {
   display: flex;
   flex-direction: column;
   width: 37rem;
@@ -104,7 +106,7 @@ h1.head {
   overflow-x: scroll;
 }
 
-.bubble-k {
+.bubble-a {
   background-color: #a9a9a9;
   background-color: transparent;
   border: solid rgba(255, 255, 255, 0.152) 3px;
@@ -113,7 +115,8 @@ h1.head {
   color: white;
 }
 
-.bubble-a {
+.bubble-k,
+.bubble-k-short {
   background-color: #61dafb;
   color: black;
 }
@@ -144,6 +147,16 @@ h1.head {
 .footr {
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footr > span {
+  padding-bottom: 20px;
+}
+
+.heart-icon {
+  cursor:pointer;
 }
 
 .App-logo {
@@ -182,4 +195,32 @@ h1.head {
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (min-width:1025px) {
+
+
+
+
+.messages-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+  align-items:center;
+}
+
+.bubble-k,
+.bubble-a,
+.bubble-k-short,
+.bubble-a-short {
+  font-size: 1.4rem;
+  width: 52%;
+}
+
+.short-message {
+  width: 50px;
+
+}
+
 }

@@ -29,6 +29,7 @@ function App() {
 
        <footer className='footr'>
         <span>You already know</span>
+        <span className='heart-icon'>♥️</span>
        </footer>
        <div className="arrows">
         <span onClick={scrollTop}>
