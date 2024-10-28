@@ -34,7 +34,7 @@ function App() {
  
 
        <footer className='footr'>
-        <span>You already know</span>
+        <span>There's a girl I really, really like...</span>
         <span className='heart-icon'>🦢</span>
        </footer>
        <div className="calendar" onClick={() => setIsDateVisible(!isDateVisible)}>
