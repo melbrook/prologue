@@ -132,9 +132,17 @@ h1.head {
   bottom: 0;
 }
 
+.calendar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 9px;
+  position: fixed;
+  bottom: 20%;
+}
+
 .arrows span {
   color: white;
-  opacity: 80%;
+  opacity: 60%;
   padding-left: 9px;
 }
 
@@ -162,6 +170,23 @@ h1.head {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.date-visible {
+  visibility:visible;
+}
+
+.date-invisible {
+  visibility: none;
+}
+
+.testing-date {
+  position: relative;
+  margin-left: 20px;
+  font-size: 1rem;
+  opacity: 70%;
+  
+  
 }
 
 

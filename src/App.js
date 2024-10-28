@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
-import { BsArrowDown, BsArrowUp } from 'react-icons/bs';
+import { BsArrowDown, BsArrowUp, BsCalendar } from 'react-icons/bs';
+import { useState } from 'react';
+import { CgCalendar } from 'react-icons/cg';
+
 
 function App() {
+  const [isDateVisible, setIsDateVisible] = useState(false);
 
   const scrollTop = (() => window.scrollTo({top: 0, behavior: 'smooth'}));
   const scrollBottom =(() => window.scrollTo({left: 0, top: document.body.scrollHeight, behavior:'smooth'}))
@@ -24,13 +28,16 @@ function App() {
 
         </p>
         </div>
-       <Home />
+       <Home isDateVisible={isDateVisible} setIsDateVisible={setIsDateVisible} />
  
 
        <footer className='footr'>
         <span>You already know</span>
         <span className='heart-icon'>♥️</span>
        </footer>
+       <div className="calendar" onClick={() => setIsDateVisible(!isDateVisible)}>
+        <BsCalendar size={18} color='gray' />
+       </div>
        <div className="arrows">
         <span onClick={scrollTop}>
         <BsArrowUp size={18}/> 

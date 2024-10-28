@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import messages from "./data";
 import "./App.css";
 
-function Home() {
+function Home(props) {
 
   const getMessages = () => {
     const messageList = [];
@@ -18,12 +18,19 @@ function Home() {
   const allMessages = myMessageArr.map((message, index) => {
     let formattedMessage = message.text;
     let sender = message.sender;
-    let date = message.createdAt;
+    let msgDate = message.createdAt;
+    let messageDate = msgDate.split(/[a-zA-Z]/)[0];
+
     return (
           <div
-          className={sender === 'Karla' ? 'bubble-k' : 'bubble-a'}>
+          className={sender === 'Karla' ? 'bubble-k' : 'bubble-a'}
+          
+          >
             <span className="bubble-text">
             {formattedMessage}
+            <span className={"testing-date"}>
+              {props.isDateVisible && messageDate}
+            </span>
             </span>
           </div>
     );
